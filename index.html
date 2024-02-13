@@ -1,13 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omg</title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/05e4f17bd1.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* remove links underlining */
+        a {
+            text-decoration: none;
+        }
+
+        /* remove dots before li */
+        li {
+            list-style-type: none;
+        }
+    </style>
 </head>
+
 <body>
-    <p>
-        bala
-    </p>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-auto" href="https://youtube.com/@JR-Koders">
+                <img src="./img/jr-koders_logo.jpg" class="d-inline-block align-top img-fluid rounded"
+                    alt="JR-Koders's logo" width="35" height="35">
+                JR-Koders
+            </a>
+            <!-- <a href="https://youtube.com/@JR-Koders" class="navbar-brand">JR-Koders</a> -->
+
+
+            <!-- <a class="nav-link ms-auto" href="#" id="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+            </a> -->
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="dark-mode-toggle" checked>
+                <label class="form-check-label" for="dark-mode-toggle">dark/light mode</label>
+            </div>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                <div class="navbar-nav ms-auto">
+                    <a href="https://youtube.com/@JR-Koders" class="nav-item nav-link">
+                        Youtube
+                    </a>
+                    <a href="https://twitter.com/@JR_Koders" class="nav-item nav-link">
+                        Twitter
+                    </a>
+                    <a href="https://buymeacoffee.com/JRKoders" class="nav-item nav-link">
+                        BuymeaCoffee
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="container mt-3">
+        <h1>Hey there!</h1>
+        <p>Welcome to the JR-Koders's blog! I hope you enjoy your stay 😉
+            My name is J-Koders and I make <a href="https://youtube.com/@JR-Koders">videos</a> about computer, raspberry
+            pis, and other cool stuff.
+        </p>
+
+        <p>
+            On this website I usually post guides, tutorials and the scripts of my videos. Feel free to <a
+                href="mailto:jr.koders@gmail.com">contact me</a> to ask anything!
+        </p>
+
+
+        <h1>Articles</h1>
+
+
+        <ul class="list-group">
+            <li>
+                <div>
+                    <a href="#myarticle1">Article 1: I don't know...</a>
+                    <p class="date">01-02-1099</p>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <a href="#myarticle2">Article 2: I don't know...</a>
+                    <p class="date">03-09-2099</p>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <a href="#myarticle3">Article 3: I don't know...</a>
+                    <p class="date">10-22-2004</p>
+                </div>
+            </li>
+
+
+        </ul>
+
+        <div class="mt-5 p-4 text-center">
+            <p>Powered by <a href="https://youtube.com/@JR-Koders">JR-Koders</a></p>
+        </div>
+
+
+        <script>
+            document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+                if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+                    document.documentElement.setAttribute('data-bs-theme', 'light')
+                }
+                else {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark')
+                }
+            })
+        </script>
+
 </body>
+
 </html>
