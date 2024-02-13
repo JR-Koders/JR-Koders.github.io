@@ -47,16 +47,20 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
 
                 <div class="navbar-nav ms-auto">
-                    <a href="https://youtube.com/@JR-Koders" class="nav-item nav-link" target="_blank" rel="noreferrer noopener">
+                    <a href="https://youtube.com/@JR-Koders" class="nav-item nav-link" target="_blank"
+                        rel="noreferrer noopener">
                         Youtube
                     </a>
-                    <a href="https://twitter.com/@JR_Koders" class="nav-item nav-link" target="_blank" rel="noreferrer noopener">
+                    <a href="https://twitter.com/@JR_Koders" class="nav-item nav-link" target="_blank"
+                        rel="noreferrer noopener">
                         Twitter
                     </a>
-                    <a href="https://github.com/JR-Koders" class="nav-item nav-link" target="_blank" rel="noreferrer noopener">
+                    <a href="https://github.com/JR-Koders" class="nav-item nav-link" target="_blank"
+                        rel="noreferrer noopener">
                         Github
                     </a>
-                    <a href="https://buymeacoffee.com/JRKoders" class="nav-item nav-link" target="_blank" rel="noreferrer noopener">
+                    <a href="https://buymeacoffee.com/JRKoders" class="nav-item nav-link" target="_blank"
+                        rel="noreferrer noopener">
                         BuymeaCoffee
                     </a>
                     <a href="mailto:jr.koders@gmail.com" class="nav-item nav-link">
@@ -84,38 +88,107 @@
 
 
         <h1>Articles</h1>
-
-
-        <ul class="list-group">
+        <ul class="list-unstyled">
+            <!-- could be class="list-group" -->
             <li>
-                <div>
-                    <a href="#myarticle1">Article 1: I don't know...</a>
-                    <p class="date">01-02-1099</p>
+                <div class="container mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row align-items-end">
+                                <div class="col">
+                                    <h5 class="card-title">How to Secure Your Wi-Fi Network</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">John Doe</h6>
+                                </div>
+                                <div class="col-auto">
+                                    <footer class="blockquote-footer text-end">02/10/2024</footer>
+                                </div>
+                            </div>
+                            <div class="card-text gradient-text">
+                                <p>Learn how to secure your Wi-Fi network from unauthorized access and potential
+                                    threats.</p>
+                            </div>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </li>
-
             <li>
-                <div>
-                    <a href="#myarticle2">Article 2: I don't know...</a>
-                    <p class="date">03-09-2099</p>
+                <div class="container mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row align-items-end">
+                                <div class="col">
+                                    <h5 class="card-title">The Future of Artificial Intelligence</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Jane Smith</h6>
+                                </div>
+                                <div class="col-auto">
+                                    <footer class="blockquote-footer text-end">02/11/2024</footer>
+                                </div>
+                            </div>
+                            <div class="card-text gradient-text">
+                                <p>Explore the latest advancements and future possibilities of artificial intelligence
+                                    technology.</p>
+                            </div>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </li>
-
             <li>
-                <div>
-                    <a href="#myarticle3">Article 3: I don't know...</a>
-                    <p class="date">10-22-2004</p>
+                <div class="container mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row align-items-end">
+                                <div class="col">
+                                    <h5 class="card-title">Tips for Improving Your Website's Performance</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Tech Guru</h6>
+                                </div>
+                                <div class="col-auto">
+                                    <footer class="blockquote-footer text-end">02/12/2024</footer>
+                                </div>
+                            </div>
+                            <div class="card-text gradient-text">
+                                <p>Boost your website's speed and responsiveness with these expert tips and techniques.
+                                </p>
+                            </div>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </li>
-
-
+            <li>
+                <div class="container mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row align-items-end">
+                                <div class="col">
+                                    <h5 class="card-title">Introduction to Blockchain Technology</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Tech Enthusiast</h6>
+                                </div>
+                                <div class="col-auto">
+                                    <footer class="blockquote-footer text-end">02/13/2024</footer>
+                                </div>
+                            </div>
+                            <div class="card-text gradient-text">
+                                <p>Discover the fundamentals of blockchain technology and its potential applications in
+                                    various industries.</p>
+                            </div>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
         </ul>
 
+
+        <!-- FOOTER -->
         <div class="mt-5 p-4 text-center">
             <p>Powered by <a href="https://youtube.com/@JR-Koders">JR-Koders</a></p>
         </div>
+        <!-- FOOTER END -->
 
 
+        <!-- js code for the dark/light mode switch to work -->
         <script>
             document.getElementById('dark-mode-toggle').addEventListener('click', () => {
                 if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
