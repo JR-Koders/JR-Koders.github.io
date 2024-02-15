@@ -145,25 +145,9 @@
         <!-- FOOTER END -->
 
 
-        <!-- js code for the dark/light mode switch to work -->
-        <script>
-            document.getElementById('dark-mode-toggle-left').addEventListener('click', () => {
-                if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
-                    document.documentElement.setAttribute('data-bs-theme', 'light')
-                }
-                else {
-                    document.documentElement.setAttribute('data-bs-theme', 'dark')
-                }
-            });
-            document.getElementById('dark-mode-toggle-right').addEventListener('click', () => {
-                if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
-                    document.documentElement.setAttribute('data-bs-theme', 'light')
-                }
-                else {
-                    document.documentElement.setAttribute('data-bs-theme', 'dark')
-                }
-            });
-        </script>
+        <!-- COLOR THEME SCRIPT -->
+        <script src="./js/color-theme.js"></script>
+        <!-- COLOR THEME SCRIPT END -->
 
 </body>
 
