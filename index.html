@@ -22,57 +22,61 @@
     </style>
 </head>
 
-<body>
+<body class="px-lg-5">
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-auto" href="https://youtube.com/@JR-Koders">
-                <img src="./img/jr-koders_logo.jpg" class="d-inline-block align-top img-fluid rounded"
-                    alt="JR-Koders's logo" width="35" height="35">
-                JR-Koders
-            </a>
-            <!-- <a href="https://youtube.com/@JR-Koders" class="navbar-brand">JR-Koders</a> -->
-
-
-            <a class="nav-link ms-auto" href="#" id="dark-mode-toggle">
-                <i class="fas fa-moon"></i>
-            </a>
-
-
-
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-
-                <div class="navbar-nav ms-auto">
-                    <a href="https://youtube.com/@JR-Koders" class="nav-item nav-link" target="_blank"
-                        rel="noreferrer noopener">
-                        Youtube
-                    </a>
-                    <a href="https://twitter.com/@JR_Koders" class="nav-item nav-link" target="_blank"
-                        rel="noreferrer noopener">
-                        Twitter
-                    </a>
-                    <a href="https://github.com/JR-Koders" class="nav-item nav-link" target="_blank"
-                        rel="noreferrer noopener">
-                        Github
-                    </a>
-                    <a href="https://buymeacoffee.com/JRKoders" class="nav-item nav-link" target="_blank"
-                        rel="noreferrer noopener">
-                        BuymeaCoffee
-                    </a>
-                    <a href="mailto:jr.koders@gmail.com" class="nav-item nav-link">
-                        Contact
-                    </a>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo and Channel Name -->
+                <a class="navbar-brand" href="#">
+                    <img src="./imgs/jr-koders_logo.jpg" alt="JR-Koders Logo" width="30" height="30"
+                        style="border-radius: 10px;" class="d-inline-block align-top">
+                    JR-Koders
+                </a>
+                <!-- Moon Icon for Dark Mode Toggle -->
+                <a href="#" class="nav-link d-lg-none ms-auto me-4" id="dark-mode-toggle-left">
+                    <i class="fas fa-moon"></i>
+                </a>
+                <!-- Navbar Toggler for smaller screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- YouTube Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://youtube.com/@JR-Koders">YouTube</a>
+                        </li>
+                        <!-- GitHub Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/JR-Koders">GitHub</a>
+                        </li>
+                        <!-- BuyMeACoffee Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://buymeacoffee.com/JRKoders">BuyMeACoffee</a>
+                        </li>
+                        <!-- Twitter Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://twitter.com/@JR_Koders">Twitter</a>
+                        </li>
+                        <!-- Contact Link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:jr-koders@gmail.com">Contact</a>
+                        </li>
+                        <!-- Moon Icon for Dark Mode Toggle -->
+                        <li class="nav-item d-none d-lg-block">
+                            <a href="#" class="nav-link" id="dark-mode-toggle-right">
+                                <i class="fas fa-moon"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
+        </nav>
 
-        </div>
-    </nav>
-
+    </div>
 
     <div class="container mt-3">
         <h1>Hey there!</h1>
@@ -86,6 +90,16 @@
                 href="mailto:jr.koders@gmail.com">contact me</a> to ask anything!
         </p>
 
+        <!-- <div class="card mb-3">
+            <img src="./imgs/wifi_secure.jpg" class="card-img-top" alt="Blog Image">
+            <div class="card-body">
+                <h5 class="card-title">How to Secure Your Wi-Fi Network</h5>
+                <p class="card-text">Learn how to secure your Wi-Fi network from unauthorized access and potential
+                    threats.</p>
+                <a href="blog_link.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div> -->
+
 
         <h1>Articles</h1>
         <ul class="list-unstyled">
@@ -98,16 +112,17 @@
                                 <div class="col">
                                     <h5 class="card-title">How to Secure Your Wi-Fi Network</h5>
                                     <h6 class="card-subtitle mb-2 text-muted">John Doe</h6>
+                                    <footer class="d-sm-none text-secondary small">02/10/2024</footer>
                                 </div>
                                 <div class="col-auto">
-                                    <footer class="blockquote-footer text-end">02/10/2024</footer>
+                                    <footer class="blockquote-footer text-end d-none d-sm-block">02/10/2024</footer>
                                 </div>
                             </div>
                             <div class="card-text gradient-text">
                                 <p>Learn how to secure your Wi-Fi network from unauthorized access and potential
                                     threats.</p>
                             </div>
-                            <a href="#" class="card-link">Read More</a>
+                            <a href="./blog/Secure-wifi-network.html" class="card-link">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -120,9 +135,10 @@
                                 <div class="col">
                                     <h5 class="card-title">The Future of Artificial Intelligence</h5>
                                     <h6 class="card-subtitle mb-2 text-muted">Jane Smith</h6>
+                                    <footer class="d-sm-none text-secondary small">02/10/2024</footer>
                                 </div>
                                 <div class="col-auto">
-                                    <footer class="blockquote-footer text-end">02/11/2024</footer>
+                                    <footer class="blockquote-footer text-end d-none d-sm-block">02/11/2024</footer>
                                 </div>
                             </div>
                             <div class="card-text gradient-text">
@@ -142,9 +158,10 @@
                                 <div class="col">
                                     <h5 class="card-title">Tips for Improving Your Website's Performance</h5>
                                     <h6 class="card-subtitle mb-2 text-muted">Tech Guru</h6>
+                                    <footer class="d-sm-none text-secondary small">02/12/2024</footer>
                                 </div>
                                 <div class="col-auto">
-                                    <footer class="blockquote-footer text-end">02/12/2024</footer>
+                                    <footer class="blockquote-footer text-end d-none d-sm-block">02/12/2024</footer>
                                 </div>
                             </div>
                             <div class="card-text gradient-text">
@@ -164,9 +181,10 @@
                                 <div class="col">
                                     <h5 class="card-title">Introduction to Blockchain Technology</h5>
                                     <h6 class="card-subtitle mb-2 text-muted">Tech Enthusiast</h6>
+                                    <footer class="d-sm-none text-secondary small">02/13/2024</footer>
                                 </div>
                                 <div class="col-auto">
-                                    <footer class="blockquote-footer text-end">02/13/2024</footer>
+                                    <footer class="blockquote-footer text-end d-none d-sm-block">02/13/2024</footer>
                                 </div>
                             </div>
                             <div class="card-text gradient-text">
@@ -190,14 +208,22 @@
 
         <!-- js code for the dark/light mode switch to work -->
         <script>
-            document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+            document.getElementById('dark-mode-toggle-left').addEventListener('click', () => {
                 if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
                     document.documentElement.setAttribute('data-bs-theme', 'light')
                 }
                 else {
                     document.documentElement.setAttribute('data-bs-theme', 'dark')
                 }
-            })
+            });
+            document.getElementById('dark-mode-toggle-right').addEventListener('click', () => {
+                if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+                    document.documentElement.setAttribute('data-bs-theme', 'light')
+                }
+                else {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark')
+                }
+            });
         </script>
 
 </body>
