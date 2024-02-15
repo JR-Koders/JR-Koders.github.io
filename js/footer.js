@@ -1,29 +1,45 @@
 document.write(
     `
-    <footer class="footer mt-auto py-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h6 class="text-muted">Powered by <a href="https://youtube.com/@JR-Koders" target="_blank">JR-Koders</a></h6>
-                    </div>
-                    <div class="col-md-4">
-                        <h6 class="text-muted">Follow Us</h6>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href="https://youtube.com/@JR-Koders" target="_blank">YouTube</a></li>
-                            <li><a href="https://twitter.com/@JR_Koders" target="_blank">Twitter</a></li>
-                            <li><a href="https://github.com/JR-Koders" target="_blank">GitHub</a></li>
-                            <li><a href="https://www.tiktok.com/@jr_koders" target="_blank">TikTok</a></li>
-                            <li><a href="https://www.instagram.com/jr.koders" target="_blank">Instagram</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h6 class="text-muted">Support Us</h6>
-                        <ul class="list-unstyled mb-0">
-                            <li><a href="https://www.buymeacoffee.com/JRKoders" target="_blank">BuyMeACoffee</a></li>
-                        </ul>
-                    </div>
+    <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+                <div class="col mb-3">
+                    <a href="https://jr-koders.github.io" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                        JR-Koders
+                    </a>
+                    <p class="text-body-secondary">© 2023</p>
                 </div>
-            </div>
-        </footer>
+
+                <div class="col mb-3">
+                    <!-- Empty column -->
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Follow Us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://youtube.com/@JR-Koders"
+                                class="nav-link p-0 text-body-secondary">YouTube</a></li>
+                        <li class="nav-item mb-2"><a href="https://twitter.com/@JR_Koders"
+                                class="nav-link p-0 text-body-secondary">Twitter</a></li>
+                        <li class="nav-item mb-2"><a href="https://github.com/JR-Koders"
+                                class="nav-link p-0 text-body-secondary">GitHub</a></li>
+                        <li class="nav-item mb-2"><a href="mailto:jr-koders@gmail.com"
+                                class="nav-link p-0 text-body-secondary">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Support Us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="https://buymeacoffee.com/JRKoders"
+                                class="nav-link p-0 text-body-secondary">BuyMeACoffee</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <!-- Empty column -->
+                </div>
+            </footer>
+        </div>
+
     `
 );
