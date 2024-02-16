@@ -24,19 +24,19 @@ function writeNav(pathToImg) {
                 <ul class="navbar-nav">
                     <!-- YouTube Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="https://youtube.com/@JR-Koders">YouTube</a>
+                        <a class="nav-link" href="https://youtube.com/@JR-Koders" target="_blank" rel="noreferrer noopener">YouTube</a>
                     </li>
                     <!-- GitHub Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/JR-Koders">GitHub</a>
+                        <a class="nav-link" href="https://github.com/JR-Koders" target="_blank" rel="noreferrer noopener">GitHub</a>
                     </li>
                     <!-- BuyMeACoffee Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="https://buymeacoffee.com/JRKoders">BuyMeACoffee</a>
+                        <a class="nav-link" href="https://buymeacoffee.com/JRKoders" target="_blank" rel="noreferrer noopener">BuyMeACoffee</a>
                     </li>
                     <!-- Twitter Link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="https://twitter.com/@JR_Koders">Twitter</a>
+                        <a class="nav-link" href="https://twitter.com/@JR_Koders" target="_blank" rel="noreferrer noopener">Twitter</a>
                     </li>
                     <!-- Contact Link -->
                     <li class="nav-item">
