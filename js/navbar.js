@@ -1,7 +1,7 @@
 function writeNav(pathToImg) {
 
     document.write(`
-    <div class="container mt-3">
+    <div class="container mt-3 mb-5">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid ps-0">
             <!-- Logo and Channel Name -->

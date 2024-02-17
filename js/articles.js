@@ -121,7 +121,7 @@ let article_counter = 0;
 
 
 // Generate the "articles" heading
-document.write('<h1 class="mt-4">Articles</h1>');
+document.write('<h1 class="mt-5 mb-5">Articles</h1>');
 
 
 
