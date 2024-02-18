@@ -8,7 +8,9 @@ function writeNav(pathToImg) {
             <a class="navbar-brand" href="https://jr-koders.github.io">
                 <img src="${pathToImg}" alt="JR-Koders Logo" width="30" height="30"
                         style="border-radius: 10px;" class="d-inline-block align-top">
-                    JR-Koders
+            </a>
+            <a class="navbar-brand d-none d-sm-block" href="https://jr-koders.github.io">
+                        JR-Koders
             </a>
             <!-- Moon Icon for Dark Mode Toggle -->
             <a href="#" class="nav-link d-lg-none ms-auto me-4" id="dark-mode-toggle-left">
