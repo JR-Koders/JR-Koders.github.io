@@ -34,6 +34,17 @@ document.write(
             </ul>
         </div>
 
+        
+        <div class="col mb-3 text-center text-sm-start">
+            <h5>Contact Us</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="mailto:jr.koders@gmail.com"
+                        class="nav-link p-0 text-body-secondary">Mail</a></li>
+            </ul>
+        </div>
+
+
+
         <div class="col mb-3"></div> <!-- Empty column -->
     </div>
 </footer>
