@@ -1,12 +1,12 @@
 function writeNav(pathToImg) {
 
     document.write(`
-    <div class="container mt-3 mb-5">
+    <div class="container mt-2 mb-5">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid ps-0">
             <!-- Logo and Channel Name -->
             <a class="navbar-brand" href="https://jr-koders.github.io">
-                <img src="${pathToImg}" alt="JR-Koders Logo" width="30" height="30"
+                <img src="${pathToImg}" alt="JR-Koders Logo" width="40" height="40" id="logo-nav"
                         style="border-radius: 10px;" class="d-inline-block align-top">
             </a>
             <a class="navbar-brand d-none d-sm-block" href="https://jr-koders.github.io">

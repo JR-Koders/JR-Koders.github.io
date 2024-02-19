@@ -1,10 +1,15 @@
 
 function dark() {
-    document.documentElement.setAttribute('data-bs-theme', 'dark')
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
+    const img = document.getElementById('logo-nav');
+    img.src = `${"jr-koders.github.io" === window.location.href ? '.' : '..'}/imgs/logo_dark.png`;
+    console.log(`${"jr-koders.github.io" === window.location.href ? '.' : '..'}/imgs/logo_dark.png`);
 }
 
 function light() {
-    document.documentElement.setAttribute('data-bs-theme', 'light')
+    document.documentElement.setAttribute('data-bs-theme', 'light');
+    const img = document.getElementById('logo-nav');
+    img.src = `${"jr-koders.github.io" === window.location.href ? '.' : '..'}/imgs/logo_light.png`;
 }
 
 document.getElementById('dark-mode-toggle-left').addEventListener('click', () => {
