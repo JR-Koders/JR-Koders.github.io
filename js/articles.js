@@ -8,6 +8,14 @@ const articles = [
         We\'ll help you install it on windows using WSL, Windows Subsystem for Linux!`,
         link: 'WSL.html',
     },
+    {
+        title: 'How to Download Files from the Web Using Python',
+        author: 'JR-Koders',
+        date: 'Nov 22, 2023',
+        description: `In this tutorial, you'll learn how to download files from the internet using Python.
+        <br>Even if you're a beginner, don't worry, we've got your back!`,
+        link: 'download-file-python.html',
+    },
 ];
 
 
