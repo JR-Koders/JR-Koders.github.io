@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <title>JR-Koders's blog</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/jr-koders_logo.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/05e4f17bd1.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- Include Highlight.js Core Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/darcula.min.css">
+
+    <!-- Include Highlight.js Core Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+
+    <!-- Initialize Highlight.js -->
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+    <style>
+        /* remove links underlining */
+        a {
+            text-decoration: none;
+        }
+
+        /* remove dots before li */
+        li {
+            list-style-type: none;
+        }
+
+        .code {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+
+
+<body class="container">
+    <!-- mx-lg-auto mx-xs-5  -->
+
+    <!-- NAVBAR -->
+    <script src="../js/navbar.js"></script>
+    <script>writeNav('../imgs/jr-koders_logo.jpg')</script>
+    <!-- NAVBAR END -->
+
+    <!-- CONTENT BEGINNING -->
+    <div class="container mt-5">
+        <h1 class="mb-1 display-3">Install Kali-linux CLI and Destkop on WSL</h1>
+        <footer class="blockquote-footer text-end d-none d-sm-block mt-3 mb-5">February 2, 2024</footer>
+        <footer class="d-sm-none text-secondary small mt-3 mb-5">February 2, 2024</footer>
+        <div class="container mt-5 mb-5">
+            <h2>Article Index</h2>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#install-kali">Install Kali Linux</a></li>
+                <li><a href="#install-tools">Install Additional Tools</a></li>
+                <li><a href="#install-desktop">Install Desktop Environment</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <h2 id="introduction">Introduction</h2>
+            <p class="lead">Welcome back to our tutorial series!</p>
+            <p>In this guide, we'll walk you through the process of installing <mark>Kali-linux</mark>, both in its
+                command-line interface (CLI) and desktop environment, using <mark>WSL</mark>.</p>
+            <p><mark>Kali Linux</mark> is a powerful distribution widely used in the cybersecurity community, providing
+                a vast array of pre-installed tools for penetration testing, ethical hacking, and security auditing.</p>
+        </div>
+
+        <div class="alert alert-info" role="alert">
+            NOTE: you first need to have WSL installed before continuing, so if you don't already, I made a
+            <a href="./WSL.html">
+                great tutorial
+            </a>
+            for that
+        </div>
+
+        <!-- Embedded YouTube Video -->
+        <div class="ratio ratio-16x9 mb-4">
+            <iframe src="https://www.youtube.com/embed/QaJxC56I8rI" allowfullscreen></iframe>
+        </div>
+
+        <!-- Comment explaining the video -->
+        <div class="alert alert-info mb-5" role="alert">
+            This video is the video version of this tutorial. Feel free to watch it if you prefer the video format.
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <h2 id="install-kali">Install Kali Linux</h2>
+            <p class="lead">Let's get started with the installation!</p>
+            <p>First, open your <mark>Windows Terminal</mark> or preferred terminal emulator.</p>
+            <p class="mb-0">Check the available Linux distributions by running the following command:</p>
+            <kbd class="bg-primary">wsl --list --online</kbd>
+            <p>You should see <mark>Kali Linux</mark> listed among the available distributions.</p>
+            <p class="mb-0">Now, proceed with the installation by executing the following command:</p>
+            <kbd class="bg-primary">wsl --install kali-linux</kbd>
+            <p>During the installation process, you'll be prompted to set up a user account specific to your <mark>Kali
+                    Linux</mark> installation on <mark>WSL</mark>.</p>
+            <p class="mb-0">Once the installation is complete, verify its success by running:</p>
+            <kbd class="bg-primary">wsl --list --verbose</kbd>
+            <p class="mt-3 mb-0">Next, ensure that your <mark>Kali Linux</mark> installation is up-to-date. Update the
+                package
+                repositories:</p>
+            <kbd class="bg-primary">sudo apt update</kbd>
+            <p class="mt-3 mb-0">Then, if needed, upgrade the installed packages to their latest versions:</p>
+            <kbd class="bg-primary">sudo apt -y full-upgrade</kbd>
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <h2 id="install-tools">Install Additional Tools</h2>
+            <p class="lead">Let's install additional tools for <mark>Kali Linux</mark>.</p>
+            <p class="mt-4 mb-0">Begin by installing a default set of tools using the following command:</p>
+            <kbd class="bg-primary">sudo apt install -y kali-linux-default</kbd>
+            <p>If you need more tools, consider installing the <mark>kali-linux-large</mark> or
+                <mark>kali-linux-everything</mark> metapackages.
+            </p>
+            <p>Refer to the official documentation for guidance on installing individual tools.</p>
+            <p><strong>Keep your tools updated for optimal performance and security!</strong></p>
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <h2 id="install-desktop">Install Desktop Environment</h2>
+            <p class="lead">Enhance your user experience with a desktop environment.</p>
+            <p class="mt-3 mb-0">Install the desktop environment using the following command:</p>
+            <kbd class="bg-primary">sudo apt install -y kali-win-kex</kbd>
+            <p class="mt-3 mb-0">Launch the desktop environment:</p>
+            <kbd class="bg-primary">kex --win -s</kbd>
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <h2 id="conclusion">Conclusion</h2>
+            <p class="lead">Congratulations! You've successfully installed <mark>Kali Linux</mark> on <mark>WSL</mark>.
+            </p>
+            <p>Explore the powerful tools and capabilities it offers, seamlessly integrated into your
+                <mark>Windows</mark> environment.
+            </p>
+            <p>Whether you're a seasoned professional or an aspiring hacker, <mark>Kali Linux</mark> on <mark>WSL</mark>
+                provides endless opportunities for testing and learning.</p>
+            <p>We hope you found this guide helpful. For more tutorials and updates, stay tuned!</p>
+        </div>
+
+    </div>
+
+    <!-- CONTENT END -->
+
+
+
+
+    <!-- FOOTER -->
+    <script src="../js/footer.js"></script>
+    <!-- FOOTER END -->
+
+
+
+    <!-- COLOR THEME SCRIPT -->
+    <script src="../js/color-theme.js"></script>
+    <!-- COLOR THEME SCRIPT END -->
+
+
+    <!-- Initialize Prism.js -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            Prism.highlightAll();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.min.js"></script>
+
+</body>
+
+</html>
