@@ -1,5 +1,12 @@
 function writeNav(pathToImg) {
 
+    // favicon
+    const currentFavicon = document.head.querySelector("link[rel='icon']") || document.createElement('link');
+    currentFavicon.href = pathToImg;
+    currentFavicon.rel = 'icon';
+    document.head.appendChild(currentFavicon);
+
+    // nav bar
     document.write(`
     <div class="container mt-2 mb-5">
     <nav class="navbar navbar-expand-lg">
@@ -9,7 +16,8 @@ function writeNav(pathToImg) {
                 <img src="${pathToImg}" alt="JR-Koders Logo" width="40" height="40" id="logo-nav"
                         style="border-radius: 10px;" class="d-inline-block align-top">
             </a>
-            <a class="navbar-brand d-none d-sm-block" href="https://jr-koders.github.io">
+            <a class="navbar-brand" href="https://jr-koders.github.io">
+            <!--  d-none d-sm-block to make it disappear on phones-->
                         JR-Koders
             </a>
             <!-- Moon Icon for Dark Mode Toggle -->
