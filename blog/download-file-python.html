@@ -47,24 +47,29 @@
 
     <!-- NAVBAR -->
     <script src="../js/navbar.js"></script>
-    <script>writeNav('../imgs/jr-koders_logo.jpg')</script>
+    <script>writeNav('../imgs/logo_light_no_border.png')</script>
     <!-- NAVBAR END -->
 
     <!-- CONTENT BEGINNING -->
     <div class="container mt-5">
-        <h1 class="mb-1 display-3">How to Download Files from the Web Using Python</h1>
-        <footer class="blockquote-footer text-end d-none d-sm-block mt-3 mb-5">Nov 22, 2023</footer>
-        <footer class="d-sm-none text-secondary small mt-3 mb-5">Nov 22, 2023</footer>
+        <h1 class="mb-1 display-4">How to Download Files from the Web Using Python</h1>
+        <div class="row">
+            <div class="col-md-auto">
+                <p class="text-muted">JR-Koders</p>
+            </div>
+            <div class="col-md-auto">
+                <p class="text-muted">Nov 22, 2023</p>
+            </div>
+        </div>
+
 
         <p class="lead">In this tutorial, you'll learn how to download files from the internet using Python. Even if
             you're a beginner, don't worry, we've got your back!</p>
 
 
-        <div style="height: 50px;"></div>
+        <div style="height: 20px;"></div>
 
-        <hr>
 
-        <div style="height: 40px;"></div>
         <h2>Article Index</h2>
         <ul>
             <li><a href="#step1">Step 1: Download a Code Editor</a></li>
@@ -72,18 +77,31 @@
             <li><a href="#step3">Step 3: Save and Run</a></li>
         </ul>
 
-        <div style="height: 40px;"></div>
+        <div style="height: 30px;"></div>
 
         <hr>
 
+        <div style="height: 15px;"></div>
+
         <!-- Embedded YouTube Video -->
-        <div class="ratio ratio-16x9 mb-4">
-            <iframe src="https://www.youtube.com/embed/4i1xKUiy2oA" allowfullscreen></iframe>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-11">
+                    <div class="mb-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/4i1xKUiy2oA" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
+
+
         <!-- Comment explaining the video -->
-        <div class="alert alert-info mb-5" role="alert">
+        <div class="alert alert-info alert-dismissible fade show mb-5" role="alert">
             This video is the video version of this tutorial. Feel free to watch it if you prefer the video format.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
 
 
@@ -92,39 +110,34 @@
         <h2 id="step1">Step 1: Download a Code Editor</h2>
 
         <p>Create a new file with the name of your choice.</p>
-        <p>I will <mark>create a file named</mark> <kbd>download_file.py</kbd></p>
+        <p>I will create a file named <kbd>download_file.py</kbd></p>
 
         <div style="height: 50px;"></div>
         <h2 id="step2">Step 2: Start Coding</h2>
 
-        <p>The first step in the coding part is to import <kbd>requests</kbd>:</p>
+        <p>The first step in the coding part is to <kbd>import requests</kbd>:</p>
 
-        <div>
-            <pre class="center mx-lg-5">
-                    <code class="python code center">import requests</code></pre>
+        <div class="code-block language-python">
+            <pre><code>import requests</code></pre>
         </div>
 
         <p>Then, declare the variable <kbd>url</kbd> and set it equal to the URL you want to download the file from.
         </p>
 
-        <div>
-            <pre class="center mx-lg-5">
-                    <code class="python code center">url = "https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/02/zip_10MB.zip"</code>
-                </pre>
+        <div class="code-block language-python">
+            <pre><code>url = "https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/02/zip_10MB.zip"</code></pre>
         </div>
 
-        <p>Next, declare the variable <kbd>webpage</kbd> and set it to <code>requests.get(url)</code>:</p>
+        <p>Next, declare the variable <kbd>webpage</kbd> and set it to <kbd>requests.get(url)</kbd>:</p>
 
-        <div>
-            <pre class="center mx-lg-5">
-                    <code class="python code center">webpage = requests.get(url)</code></pre>
+        <div class="code-block language-python">
+            <pre><code>webpage = requests.get(url)</code></pre>
         </div>
 
         <p>Finally, declare the variable <kbd>futureName</kbd>, which will take the last element of your list:</p>
 
-        <div>
-            <pre class="center mx-lg-5">
-                    <code class="python code center">futureName = url.split('/')[-1]</code></pre>
+        <div class="code-block language-python">
+            <pre><code>futureName = url.split('/')[-1]</code></pre>
         </div>
 
         <div style="height: 50px;"></div>
@@ -135,9 +148,8 @@
             <mark>writing it to a local file</mark>, as follows:
         </p>
 
-        <div>
-            <pre class="center mx-lg-5">
-                    <code class="python code center">import requests
+        <div class="code-block language-python">
+            <pre><code>import requests
     
 url = "https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/02/zip_10MB.zip"
 
@@ -155,27 +167,30 @@ with open(futureName, 'wb') as file:
             this example:
         </p>
 
-        <div>
-            <pre class="center mx-lg-5">
-                    <code class="bash code center">python download_file.py</code></pre>
+        <div class="code-block language-terminal">
+            <pre><code>python download_file.py</code></pre>
         </div>
 
         <p>Whatever URL you input, it will download the file from it.</p>
 
+        <div style="height: 30px;"></div>
         <hr>
-
+        <div style="height: 10px;"></div>
         <p>Learning how to download files from the web using a programming language is a great skill to have,
             especially when doing web development and automations.</p>
 
         <p>Hoping that you now know how to successfully download files using Python!</p>
 
-
+        <div style="height: 30px;"></div>
 
 
     </div>
 
     <!-- CONTENT END -->
 
+
+    <!-- Format all the code -->
+    <script src="../js/code.js"></script>
 
 
 
@@ -197,7 +212,6 @@ with open(futureName, 'wb') as file:
         });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.min.js"></script>
 
 </body>
 
