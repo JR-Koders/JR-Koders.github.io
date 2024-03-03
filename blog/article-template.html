@@ -1,4 +1,3 @@
-
 <!-- 
     Here are rules you MUST respect while generating articles for me:
 Global html rules:
@@ -45,22 +44,6 @@ Make sure you include the "body" tag
     <script>hljs.initHighlightingOnLoad();</script>
 
 
-
-    <style>
-        /* remove links underlining */
-        a {
-            text-decoration: none;
-        }
-
-        /* remove dots before li */
-        li {
-            list-style-type: none;
-        }
-
-        .code {
-            border-radius: 5px;
-        }
-    </style>
 </head>
 
 
@@ -73,82 +56,147 @@ Make sure you include the "body" tag
     <script>writeNav('../imgs/jr-koders_logo.jpg')</script>
     <!-- NAVBAR END -->
 
+
+
     <!-- CONTENT BEGINNING -->
     <div class="container mt-5">
-        <h1 class="mb-1 display-3">Amazing title</h1>
-        <footer class="blockquote-footer text-end d-none d-sm-block mt-3 mb-5">date</footer>
-        <footer class="d-sm-none text-secondary small mt-3 mb-5">date</footer>
-        <p class="lead">
-            The intro....
-            ....
-            ...
-        </p>
-
-        <p>
-            <kbd class="bg-primary">ls</kbd> command is used to list files and directories in the current directory. It
-            provides information such as file names, permissions, and sizes. For example, to list all files in the
-            current
-            directory, simply type <kbd>ls</kbd> and press Enter.
-        </p>
-
-        <h3>
-            Fancy display heading
-            <small class="text-muted">With faded secondary text</small>
-        </h3>
+        <h1 class="mb-1 display-4">This title makes you want to read this amazing article</h1>
+        <div class="row">
+            <div class="col-md-auto">
+                <p class="text-muted">JR-Koders</p>
+            </div>
+            <div class="col-md-auto">
+                <p class="text-muted">Nov 22, 2023</p>
+            </div>
+        </div>
 
         <p class="lead">
-            This is a lead paragraph. It stands out from regular paragraphs.
+            In this tutorial, we still don't know what you'll learn but it's still gonna be cool...
         </p>
 
-        <samp>This text is meant to be treated as sample output from a computer program.</samp>
+        <div style="height: 20px;"></div>
 
-        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-        <p><del>This line of text is meant to be treated as deleted text.</del></p>
-        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-        <p><u>This line of text will render as underlined.</u></p>
-        <p><small>This line of text is meant to be treated as fine print.</small></p>
-        <p><strong>This line rendered as bold text.</strong></p>
-        <p><em>This line rendered as italicized text.</em></p>
-
-
-        <figure>
-            <blockquote class="blockquote">
-                <p>A well-known quote, contained in a blockquote element.</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-            </figcaption>
-        </figure>
-
-        <ul class="list-unstyled">
-            <li>This is a list.</li>
-            <li>It appears completely unstyled.</li>
-            <li>Structurally, it's still a list.</li>
-            <li>However, this style only applies to immediate child elements.</li>
-            <li>Nested lists:
-                <ul>
-                    <li>are unaffected by this style</li>
-                    <li>will still show a bullet</li>
-                    <li>and have appropriate left margin</li>
-                </ul>
-            </li>
-            <li>This may still come in handy in some situations.</li>
+        <h2>Article Index</h2>
+        <ul>
+            <li><a href="#step1">The first thing</a></li>
+            <li><a href="#step2">Then it's that</a></li>
+            <li><a href="#step3">Last step!</a></li>
+            <li><a href="#outro">The outro</a></li>
         </ul>
 
-        <pre class="center mx-lg-5">
-            <code class="javascript code center">
-function greet() {
-    console.log('Hello, World!');
-}
-            </code>
-        </pre>
+        <div style="height: 30px;"></div>
+
+        <hr>
+
+        <div style="height: 15px;"></div>
+
+        <!-- Embedded YouTube Video -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-11">
+                    <div class="mb-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/4i1xKUiy2oA" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comment explaining the video -->
+        <div class="alert alert-info alert-dismissible fade show mb-5" role="alert">
+            This video is the video version of this tutorial. Feel free to watch it if you prefer the video format.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+
+        <div style="height: 50px;"></div>
+
+
+        <h2 id="step1">Step 1: Download a Code Editor</h2>
+
+        <p>Create a new file with the name of your choice.</p>
+        <p>I will create a file named <kbd>download_file.py</kbd></p>
+
+        <div style="height: 50px;"></div>
+        <h2 id="step2">Step 2: Start Coding</h2>
+
+        <p>The first step in the coding part is to <kbd>import requests</kbd>:</p>
+
+        <div class="code-block language-python">
+            <pre><code>import requests</code></pre>
+        </div>
+
+        <p>Then, declare the variable <kbd>url</kbd> and set it equal to the URL you want to download the file from.
+        </p>
+
+        <div class="code-block language-python">
+            <pre><code>url = "https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/02/zip_10MB.zip"</code></pre>
+        </div>
+
+        <p>Next, declare the variable <kbd>webpage</kbd> and set it to <kbd>requests.get(url)</kbd>:</p>
+
+        <div class="code-block language-python">
+            <pre><code>webpage = requests.get(url)</code></pre>
+        </div>
+
+        <p>Finally, declare the variable <kbd>futureName</kbd>, which will take the last element of your list:</p>
+
+        <div class="code-block language-python">
+            <pre><code>futureName = url.split('/')[-1]</code></pre>
+        </div>
+
+        <div style="height: 50px;"></div>
+        <h2 id="step3">Step 3: Save and Run</h2>
+
+        <p>Now that we have declared all the variables, we can write the actual file by
+            <mark>taking the content of the response</mark> from the web server and
+            <mark>writing it to a local file</mark>, as follows:
+        </p>
+
+        <div class="code-block language-python">
+            <pre><code>import requests
+    
+url = "https://file-examples.com/storage/fe9d743740654a8139a48e1/2017/02/zip_10MB.zip"
+
+webpage = requests.get(url)
+    
+futureName = url.split('/')[-1]
+    
+with open(futureName, 'wb') as file:
+    file.write(webpage.content)</code></pre>
+        </div>
+
+        <p>
+            Save the code and run it!
+            To run it, <mark>open a terminal</mark>, and write <kbd>python</kbd> followed by your file name, as in
+            this example:
+        </p>
+
+        <div class="code-block language-terminal">
+            <pre><code>python download_file.py</code></pre>
+        </div>
+
+        <p>Whatever URL you input, it will download the file from it.</p>
+
+        <div style="height: 30px;"></div>
+        <hr>
+        <div style="height: 10px;"></div>
+        <p id="outro">Learning how to download files from the web using a programming language is a great skill to have,
+            especially when doing web development and automations.</p>
+
+        <p>Hoping that you now know how to successfully download files using Python!</p>
+
+        <div style="height: 30px;"></div>
 
 
     </div>
 
     <!-- CONTENT END -->
 
+
+    <!-- Format all the code -->
+    <script src="../js/code.js"></script>
 
 
 
@@ -161,16 +209,6 @@ function greet() {
     <!-- COLOR THEME SCRIPT -->
     <script src="../js/color-theme.js"></script>
     <!-- COLOR THEME SCRIPT END -->
-
-
-    <!-- Initialize Prism.js -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            Prism.highlightAll();
-        });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.min.js"></script>
 
 </body>
 

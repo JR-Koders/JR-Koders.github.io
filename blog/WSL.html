@@ -26,23 +26,6 @@
     <script>hljs.highlightAll();</script>
 
 
-
-
-
-    <style>
-        /* remove links underlining */
-        a {
-            text-decoration: none;
-        }
-
-        /* remove dots before li */
-        li {
-            list-style-type: none;
-        }
-
-        
-    </style>
-
 </head>
 
 
@@ -52,144 +35,160 @@
 
     <!-- NAVBAR -->
     <script src="../js/navbar.js"></script>
-    <script>writeNav('../imgs/logo_light_no_border.png')</script>
+    <script>writeNav('../imgs/logo_light.png')</script>
     <!-- NAVBAR END -->
+
+
 
     <!-- CONTENT BEGINNING -->
     <div class="container mt-5">
-        <h1 class="mb-1 display-3">Use Linux on Windows! - WSL install guide</h1>
-        <footer class="blockquote-footer text-end d-none d-sm-block mt-3 mb-5">Jan 22, 2024</footer>
-        <footer class="d-sm-none text-secondary small mt-3 mb-5">Jan 22, 2024</footer>
+        <h1 class="mb-1 display-4">Use Linux on Windows! - WSL install guide</h1>
+        <div class="row">
+            <div class="col-md-auto">
+                <p class="text-muted">JR-Koders</p>
+            </div>
+            <div class="col-md-auto">
+                <p class="text-muted">Jan 22, 2024</p>
+            </div>
+        </div>
+
         <p class="lead">
             Ready to start using Linux in the comfort of your Windows machine?<br>
             In this tutorial, we'll walk you through the process of installing Windows Subsystem for Linux (WSL) on your
             Windows machine! 🚀
         </p>
 
+        <div style="height: 20px;"></div>
+
+        <h2>Article Index</h2>
+        <ul>
+            <li><a href="#difference-between-wsl1-and-wsl2">Difference between WSL1 and WSL2</a></li>
+            <li><a href="#install-wsl">Install WSL</a></li>
+            <li><a href="#get-other-distros-than-ubuntu">Get other distros than Ubuntu</a></li>
+            <li><a href="#manage-wsl">Manage WSL</a></li>
+            <li><a href="#outro">Outro</a></li>
+        </ul>
+
+        <div style="height: 30px;"></div>
+
+        <hr>
+
+        <div style="height: 15px;"></div>
 
         <!-- Embedded YouTube Video -->
-        <div class="ratio ratio-16x9 mb-4">
-            <iframe src="https://www.youtube.com/embed/QzJxC56I8rI" allowfullscreen></iframe>
-        </div>
-
-        <!-- Comment explaining the video -->
-        <div class="alert alert-info mb-5" role="alert">
-            This video is the video version of this tutorial. Feel free to watch it if you prefer the video format.
-        </div>
-
-
-
         <div class="container">
-            <div class="col">
-
-                <h1 class="display-4">Installing Linux on a Windows Machine</h1>
-
-                <p class="lead">Today we are going to install Linux on a Windows machine!</p>
-
-                <div style="height: 30px;"></div> <!-- Adding space -->
-
-                <h2>Index</h2>
-                <ul>
-                    <li><a href="#difference-between-wsl1-and-wsl2">Difference between WSL1 and WSL2</a></li>
-                    <li><a href="#install-wsl">Install WSL</a></li>
-                    <li><a href="#get-other-distros-than-ubuntu">Get other distros than Ubuntu</a></li>
-                    <li><a href="#manage-wsl">Manage WSL</a></li>
-                    <li><a href="#outro">Outro</a></li>
-                </ul>
-
-                <div style="height: 30px;"></div> <!-- Adding space -->
-
-                <h2 id="difference-between-wsl1-and-wsl2">Difference between WSL1 and WSL2</h2>
-                <p>There are two versions of WSL available: WSL 1, and WSL 2. <a
-                        href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions" target="_blank"
-                        rel="noopener noreferrer">Learn More</a></p>
-
-                <p>Why did Microsoft create WSL1 the way they did and then create WSL2 to use the Linux Kernel? Why
-                    didn't WSL1 just use the Linux Kernel? <a
-                        href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-wsl-1-and-wsl-2"
-                        target="_blank" rel="noopener noreferrer">Read more</a></p>
-
-                <p>So basically, WSL1 doesn’t support every Linux program and features because it is not really a Linux
-                    machine, it just uses a <mark>translation layer</mark>.</p>
-
-                <p>On the other hand, <mark>WSL2 uses virtualization</mark>, meaning that everything will be exactly the
-                    same as if you used a real Linux computer.</p>
-
-                <div style="height: 50px;"></div> <!-- Adding space -->
-
-                <h2 id="install-wsl">Install WSL</h2>
-                <p>To install WSL, it is really easy:</p>
-                <ol>
-                    <li>First, hold the Windows key down and hit the “r” key.</li>
-                    <li>Then, type “powershell” in the input box.</li>
-                </ol>
-                <p>Now that we’ve opened a PowerShell terminal, we can install WSL by simply typing:</p>
-                <div class="code-block language-powershell">
-                    <pre><code>wsl <br>-–install</code></pre>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-11">
+                    <div class="mb-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/QzJxC56I8rI" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
-                <p>The process may take several minutes.</p>
-
-                <div style="height: 50px;"></div> <!-- Adding space -->
-
-                <h2 id="get-other-distros-than-ubuntu">Get other distros than Ubuntu</h2>
-                <p>But now, what if you don’t like Ubuntu and you want, for example, Debian?</p>
-                <p>Well, it is as easy as it was to install WSL!</p>
-                <p>Open your favorite browser, and go on <a href="https://apps.microsoft.com" target="_blank"
-                        rel="noopener noreferrer">apps.microsoft.com</a>.</p>
-                <p>Then, look up any Linux distribution you want.</p>
-                <p>For example, I’ll look for <mark>Debian</mark>, and click on the first result.</p>
-                <p>Then click <kbd>install</kbd> and that's it!</p>
-
-                <div style="height: 50px;"></div> <!-- Adding space -->
-
-                <h2 id="manage-wsl">Manage WSL</h2>
-                <p>In this part of the tutorial, we will see a few basic commands to interact with WSL.</p>
-                <p>For example, what if you wanted to upgrade from WSL1 to WSL2?</p>
-
-                <p>If you had WSL1 installed, you can upgrade it by typing:</p>
-                <div class="code-block language-powershell">
-                    <pre><code>wsl –set-default-version 2</code></pre>
-                </div>
-                <p>It will ask you to download the kernel for WSL2, and then you will have to restart your computer.
-                    Once you’ve done this, you will now have successfully upgraded to WSL2!</p>
-
-                <p>And what if you wanted to go back to WSL1?</p>
-                <p>Same thing! Simply run:</p>
-                <div class="code-block language-powershell">
-                    <pre><code>wsl –set-default-version 1</code></pre>
-                </div>
-
-                <p>And what if you wanted to have one subsystem running WSL1 and another running WSL2?</p>
-                <p>Easy!</p>
-
-                <p>First, show every subsystems by typing:</p>
-                <div class="code-block language-powershell">
-                    <pre><code>wsl --list --verbose</code></pre>
-                </div>
-
-                <p>Copy the name of the subsystem you would like to make changes to.</p>
-                <p>Then, run:</p>
-                <div class="code-block language-powershell">
-                    <pre><code>wsl --set-version &lt;distribution name&gt; &lt;versionNumber&gt;</code></pre>
-                </div>
-                <p>For example, I can run this command to run Kali-Linux on WSL2.</p>
-                <div class="code-block language-powershell">
-                    <pre><code>wsl --set-version kali-linux 2</code></pre>
-                </div>
-
-                <div style="height: 50px;"></div> <!-- Adding space -->
-
-                <h2 id="outro">Outro</h2>
-                <p>That’s it for this tutorial, I hope you learned things today! If you did, don’t forget to
-                    <a href="https://youtube.com/@JR-Koders" target="_blank" rel="noreferrer noopener">subscribe to
-                        my
-                        youtube channel</a>,
-                    like and comment!
-                </p>
-                <p>I'll see you in my next tutorial</p>
-
             </div>
         </div>
+
+
+
+        <!-- Comment explaining the video -->
+        <div class="alert alert-info alert-dismissible fade show mb-5" role="alert">
+            This video is the video version of this tutorial. Feel free to watch it if you prefer the video format.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+
+
+        <div style="height: 50px;"></div> <!-- Adding space -->
+
+        <h2 id="difference-between-wsl1-and-wsl2">Difference between WSL1 and WSL2</h2>
+        <p>There are two versions of WSL available: WSL 1, and WSL 2. <a
+                href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions" target="_blank"
+                rel="noopener noreferrer">Learn More</a></p>
+
+        <p>Why did Microsoft create WSL1 the way they did and then create WSL2 to use the Linux Kernel? Why
+            didn't WSL1 just use the Linux Kernel? <a
+                href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-wsl-1-and-wsl-2"
+                target="_blank" rel="noopener noreferrer">Read more</a></p>
+
+        <p>So basically, WSL1 doesn’t support every Linux program and features because it is not really a Linux
+            machine, it just uses a <mark>translation layer</mark>.</p>
+
+        <p>On the other hand, <mark>WSL2 uses virtualization</mark>, meaning that everything will be exactly the
+            same as if you used a real Linux computer.</p>
+
+        <div style="height: 50px;"></div> <!-- Adding space -->
+
+        <h2 id="install-wsl">Install WSL</h2>
+        <p>To install WSL, it is really easy:</p>
+        <ol>
+            <li>First, hold the Windows key down and hit the “r” key.</li>
+            <li>Then, type “powershell” in the input box.</li>
+        </ol>
+        <p>Now that we’ve opened a PowerShell terminal, we can install WSL by simply typing:</p>
+        <div class="code-block language-powershell">
+            <pre><code>wsl <br>-–install</code></pre>
+        </div>
+        <p>The process may take several minutes.</p>
+
+        <div style="height: 50px;"></div> <!-- Adding space -->
+
+        <h2 id="get-other-distros-than-ubuntu">Get other distros than Ubuntu</h2>
+        <p>But now, what if you don’t like Ubuntu and you want, for example, Debian?</p>
+        <p>Well, it is as easy as it was to install WSL!</p>
+        <p>Open your favorite browser, and go on <a href="https://apps.microsoft.com" target="_blank"
+                rel="noopener noreferrer">apps.microsoft.com</a>.</p>
+        <p>Then, look up any Linux distribution you want.</p>
+        <p>For example, I’ll look for <mark>Debian</mark>, and click on the first result.</p>
+        <p>Then click <kbd>install</kbd> and that's it!</p>
+
+        <div style="height: 50px;"></div> <!-- Adding space -->
+
+        <h2 id="manage-wsl">Manage WSL</h2>
+        <p>In this part of the tutorial, we will see a few basic commands to interact with WSL.</p>
+        <p>For example, what if you wanted to upgrade from WSL1 to WSL2?</p>
+
+        <p>If you had WSL1 installed, you can upgrade it by typing:</p>
+        <div class="code-block language-powershell">
+            <pre><code>wsl –set-default-version 2</code></pre>
+        </div>
+        <p>It will ask you to download the kernel for WSL2, and then you will have to restart your computer.
+            Once you’ve done this, you will now have successfully upgraded to WSL2!</p>
+
+        <p>And what if you wanted to go back to WSL1?</p>
+        <p>Same thing! Simply run:</p>
+        <div class="code-block language-powershell">
+            <pre><code>wsl –set-default-version 1</code></pre>
+        </div>
+
+        <p>And what if you wanted to have one subsystem running WSL1 and another running WSL2?</p>
+        <p>Easy!</p>
+
+        <p>First, show every subsystems by typing:</p>
+        <div class="code-block language-powershell">
+            <pre><code>wsl --list --verbose</code></pre>
+        </div>
+
+        <p>Copy the name of the subsystem you would like to make changes to.</p>
+        <p>Then, run:</p>
+        <div class="code-block language-powershell">
+            <pre><code>wsl --set-version &lt;distribution name&gt; &lt;versionNumber&gt;</code></pre>
+        </div>
+        <p>For example, I can run this command to run Kali-Linux on WSL2.</p>
+        <div class="code-block language-powershell">
+            <pre><code>wsl --set-version kali-linux 2</code></pre>
+        </div>
+
+        <div style="height: 50px;"></div> <!-- Adding space -->
+
+        <hr>
+        <p id="outro">That’s it for this tutorial, I hope you learned things today! If you did, don’t forget to
+            <a href="https://youtube.com/@JR-Koders" target="_blank" rel="noreferrer noopener">subscribe to
+                my
+                youtube channel</a>,
+            like and comment!
+        </p>
+        <p>I'll see you in my next tutorial!</p>
+
 
 
     </div>
