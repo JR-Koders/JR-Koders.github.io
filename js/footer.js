@@ -5,7 +5,7 @@ document.write(
         <div class="col mb-3 text-center text-sm-start">
             <a href="https://jr-koders.github.io"
                 class="text-center text-sm-start mb-3 link-body-emphasis text-decoration-none">
-                JR-Koders
+                <h1>JR-Koders</h1>
             </a>
             <p class="text-body-secondary">© 2023</p>
         </div>

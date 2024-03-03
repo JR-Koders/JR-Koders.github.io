@@ -1,6 +1,51 @@
 function writeNav(pathToImg) {
 
 
+    var newStyle = document.createElement('style');
+
+    // Set the content of the style element
+    newStyle.textContent = `
+            /* remove links underlining */
+            a {
+                text-decoration: none;
+            }
+
+            /* remove dots before li */
+            li {
+                list-style-type: none;
+            }
+
+            .code {
+                border-radius: 5px;
+            }
+
+            /* Custom font sizes for headings */
+            h1,
+            h2,
+            h3
+            {
+                font-size: 3em;
+                /* Adjust the font size as per your requirement */
+            }
+            h4,
+            h5,
+            h6
+            {
+                font-size: 1.7em;
+            }
+
+            /* Custom font size for paragraphs */
+            p,
+            pre>code {
+                font-size: 1.15em;
+                /* Adjust the font size as per your requirement */
+            }
+        `;
+
+    // Append the new style element to the end of the head section
+    document.head.appendChild(newStyle);
+
+
     // nav bar
     document.write(`
     <div class="container mt-2 mb-5">
