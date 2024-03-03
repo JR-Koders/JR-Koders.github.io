@@ -1,6 +1,6 @@
 
 function dark() {
-    const pathStart = window.location.href.includes("jr-koders.github.io") ? '.' : '..';
+    const pathStart = window.location.href.includes("index.html") ? '.' : '..';
     // page's color theme
     document.documentElement.setAttribute('data-bs-theme', 'dark');
     // nav bar
@@ -25,7 +25,7 @@ function dark() {
 }
 
 function light() {
-    const pathStart = window.location.href.includes("jr-koders.github.io") ? '.' : '..';
+    const pathStart = window.location.href.includes("index.html") ? '.' : '..';
     // page's color theme
     document.documentElement.setAttribute('data-bs-theme', 'light');
     // nav bar

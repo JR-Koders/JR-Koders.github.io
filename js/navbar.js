@@ -46,6 +46,10 @@ function writeNav(pathToImg) {
     document.head.appendChild(newStyle);
 
 
+
+    const pathStart = window.location.href.includes("index.html") ? '.' : '..';
+
+
     // nav bar
     document.write(`
     <div class="container mt-2 mb-5">
@@ -53,7 +57,7 @@ function writeNav(pathToImg) {
         <div class="container-fluid ps-0">
             <!-- Logo and Channel Name -->
             <a class="navbar-brand" href="https://jr-koders.github.io">
-                <img src="${pathToImg}" alt="JR-Koders Logo" width="40" height="40" id="logo-nav"
+                <img src="${pathStart}/imgs/logo_dark.png" alt="JR-Koders Logo" width="40" height="40" id="logo-nav"
                         style="border-radius: 10px;" class="d-inline-block align-top">
             </a>
             <a class="navbar-brand" href="https://jr-koders.github.io">
