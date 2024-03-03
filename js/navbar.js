@@ -1,10 +1,5 @@
 function writeNav(pathToImg) {
 
-    // favicon
-    const currentFavicon = document.head.querySelector("link[rel='icon']") || document.createElement('link');
-    currentFavicon.href = pathToImg;
-    currentFavicon.rel = 'icon';
-    document.head.appendChild(currentFavicon);
 
     // nav bar
     document.write(`

@@ -1,15 +1,51 @@
 
 function dark() {
+    const pathStart = window.location.href.includes("jr-koders.github.io") ? '.' : '..';
+    // page's color theme
     document.documentElement.setAttribute('data-bs-theme', 'dark');
+    // nav bar
     const img = document.getElementById('logo-nav');
-    img.src = `${"jr-koders.github.io" === window.location.href ? '.' : '..'}/imgs/logo_dark.png`;
-    console.log(`${"jr-koders.github.io" === window.location.href ? '.' : '..'}/imgs/logo_dark.png`);
+    img.src = `${pathStart}/imgs/logo_dark.png`;
+    // favicon
+    console.log("links found in head:", document.getElementsByTagName('link'));
+    const oldFavicon = document.head.querySelector("link[rel='icon']");
+    if (oldFavicon) {
+        oldFavicon.remove();
+        console.log("deleted old favicon!");
+    }
+    else {
+        console.log("couldn't delete old favicon");
+    }
+    const newFavicon = document.createElement('link');
+    newFavicon.rel = 'icon';
+    newFavicon.href = `${pathStart}/imgs/logo_dark.png`;
+    newFavicon.type = "image/x-icon";
+    document.head.appendChild(newFavicon);
+    console.log("switched favicon color to black!");
 }
 
 function light() {
+    const pathStart = window.location.href.includes("jr-koders.github.io") ? '.' : '..';
+    // page's color theme
     document.documentElement.setAttribute('data-bs-theme', 'light');
+    // nav bar
     const img = document.getElementById('logo-nav');
-    img.src = `${"jr-koders.github.io" === window.location.href ? '.' : '..'}/imgs/logo_light.png`;
+    img.src = `${pathStart}/imgs/logo_light.png`;
+    // favicon
+    const oldFavicon = document.head.querySelector("link[rel='icon']");
+    if (oldFavicon) {
+        oldFavicon.remove();
+        console.log("deleted old favicon!");
+    }
+    else {
+        console.log("couldn't delete old favicon");
+    }
+    const newFavicon = document.createElement('link');
+    newFavicon.rel = 'icon';
+    newFavicon.href = `${pathStart}/imgs/logo_light.png`;
+    newFavicon.type = "image/x-icon";
+    document.head.appendChild(newFavicon);
+    console.log("switched favicon color to light!");
 }
 
 document.getElementById('dark-mode-toggle-left').addEventListener('click', () => {
