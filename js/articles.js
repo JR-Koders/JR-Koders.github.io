@@ -16,6 +16,14 @@ const articles = [
         <br>Even if you're a beginner, don't worry, we've got your back!`,
         link: 'download-file-python.html',
     },
+    {
+        title: 'Install Kali-linux CLI and Destkop on WSL',
+        author: 'JR-Koders',
+        date: 'February 2, 2024',
+        description: `In this guide, we'll walk you through the process of installing Kali-linux, both in its
+        command-line interface (CLI) and desktop environment, using WSL.`,
+        link: 'kali-linux.html',
+    },
 ];
 
 
